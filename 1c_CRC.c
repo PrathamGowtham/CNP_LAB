@@ -3,7 +3,8 @@
 
 void xor_division(int data[], int length, int remainder[]) {
     int ccit[DEGREE + 1] = {1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1};
-    for (int i = 0; i < length; i++) remainder[i] = data[i];
+    for (int i = 0; i < length; i++)
+        remainder[i] = data[i];
     for (int i = 0; i <= length - DEGREE - 1; i++) {
         if (remainder[i] == 1) {
             for (int j = 0; j <= DEGREE; j++) {
